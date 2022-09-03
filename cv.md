@@ -36,3 +36,11 @@ At first, my colleagues helped me, showed me where and what to fix. Then I reali
 ---
 - Russian (native)
 - English (**A1**)
+
+
+### Projects
+---
+- [Travel](https://alesia-abaeva.github.io/travel/)
+- [Momentum](https://rolling-scopes-school.github.io/alesia-abaeva-JSFEPRESCHOOL2022Q2/momentum/)
+- [Eldritch Horror helper](https://alesia-abaeva.github.io/Eldritch-Horror-Codejam/)
+
