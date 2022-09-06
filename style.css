@@ -233,3 +233,43 @@ body{
     width: 100%;
 }
 
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    color: #ffffff;
+    background-color: #17191d;
+    text-align: center
+}
+
+.footer_github-links,
+.footer_rs-school-links{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.footer_github-links{
+    background-image: url('./img/footer_github.png');
+}
+
+.footer_rs-school-links{
+    background-image: url('./img/footer_rs-school.png');
+}
+
+.footer_rs-school-links:hover{
+    background-image: url('./img/footer_rs-school_hover.png');
+}
+
+.footer_github-links:hover{
+    background-image: url('./img/footer_github_hover.png');
+}
+
