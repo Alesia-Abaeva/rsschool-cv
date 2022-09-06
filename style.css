@@ -273,3 +273,46 @@ body{
     background-image: url('./img/footer_github_hover.png');
 }
 
+@media (max-width: 800px){
+    .section__container{
+        display: block;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .main__title{
+        width: 100%;
+    }
+
+    .header__nav {
+        display: block;
+        height: auto;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container__left-section,
+    .container__rigth-section,
+    .left-section__avatar{
+        width: 100%;
+    }
+
+    .left-section__avatar::before{
+        display: none;
+    } 
+
+    .avatar{
+        width: 50%;
+        max-width: 100%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }  
+
+    .pre-code-example{
+        font-size: 12px;
+    }  
+}
