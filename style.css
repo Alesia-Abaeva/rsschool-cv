@@ -175,10 +175,51 @@ body{
     border: none;
     background: linear-gradient(45deg, #333333, #ddd);
     /* transition: 0.25s linear; */
-
 }
 
 .line:hover{
     background: linear-gradient(45deg, #6608f7, rgb(255, 255, 255));
     /* transition: 0.25s linear; */
 }
+
+.skill-color{
+    width: 100%;
+    background-color: #8e8e8e;
+    margin-bottom: 3px;
+}
+
+.skill-persent{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 25px;
+    color: #d2b6fb
+}
+
+.html,
+.css,
+.java,
+.git,
+.figma{
+    background-color: #333333;
+}
+
+.html{
+    width: 75%;
+}
+
+.css{
+    width: 55%;
+}
+
+.java{
+    width: 45%;
+}
+
+.git{
+    width: 55%;
+}
+
+.figma{
+    width: 80%;
+}
+
