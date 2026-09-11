@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #000000;
+    max-width: 1000px;
+    margin: auto;          
+} 
+
+.header{
+    background-color: #0000001a 
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #000000
+}
+
+.nav_item{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.nav_item:hover{
+    background-color: #6608f7;
+    text-decoration: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.item-links{
+    text-decoration:none;
+    color: white;
+}
+
+.main__title{
+    padding-top: 30px;
+    width: 43%;
+    text-align: center;
+    background-color: #fafefd;
+}
+
+.section__container{
+    display: flex;
+    gap: 1px;
+}
+
+.container__left-section{
+    width: 43%;
+    background-color: #000000;
+    color: #f5f5f5;
+}
+
+.left-section__avatar{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.left-section__avatar::before{
+    display: block;
+    content: '';
+    width: 100%;
+    height:150px;
+    background: linear-gradient(to top left, #000000 50%, #06060600 1%);    
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(-5%);
+}
+
+.avatar{
+    width: 450px;
+    max-width: 100%;
+}
+
+.cards{
+    border-radius: 20px;
+    padding: 0px 45px 45px 45px;
+    margin-bottom: 10px;
+    line-height: 20px; 
+}
+
+.cards h2{
+    margin-bottom: 15px; 
+}
+
+.left-section__card_contacts{
+    line-height: 25px;
+}
+
+.card_contacts_social{
+    margin-top: 5px;
+    display: flex;
+}
+
+.contacts_social,
+.social_dots{
+    /* display: flex; */
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 1s;
+    margin-right: 20px;
+}
+
+.section-cards__lists{
+    padding-left: 17px;
+    line-height: 25px;
+    list-style-type: square
+}
+
+.lists-block{
+    list-style-type: none;
+}
+
+.lists-elements{
+    color: #f5f5f5;
+    text-decoration: none;   
+    border-bottom: 1px solid #f5f5f5;
+    transition: all 0.25s linear;
+    position: relative;    
+}
+
+.lists-elements:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #6608f7;
+    position: absolute;
+    left: 0;
+    bottom: -1px; /* this is to match where the border is */
+    transform-origin: left; 
+    transform: scale(0);
+    transition: 0.25s linear;
+    will-change: transform; 
+  }
+
+.lists-elements:hover:before {
+    transform: scale(1);
+}
+
+.project li{
+    margin-bottom: 5px;
+}
+
+.container__rigth-section{
+    background-color: #fafefd;
+    width: 57%;
+}
+
+.line {
+    margin-bottom: 45px;
+    padding: 0;
+    height: 6px;
+    border: none;
+    background: linear-gradient(45deg, #333333, #ddd);
+    /* transition: 0.25s linear; */
+}
+
+.line:hover{
+    background: linear-gradient(45deg, #6608f7, rgb(255, 255, 255));
+    /* transition: 0.25s linear; */
+}
+
+.skill-color{
+    width: 100%;
+    background-color: #8e8e8e;
+    margin-bottom: 3px;
+}
+
+.skill-persent{
+    text-align: right;
+    padding-right: 20px;
+    line-height: 25px;
+    color: #d2b6fb
+}
+
+.html,
+.css,
+.java,
+.git,
+.figma{
+    background-color: #333333;
+}
+
+.html{
+    width: 75%;
+}
+
+.css{
+    width: 55%;
+}
+
+.java{
+    width: 45%;
+}
+
+.git{
+    width: 55%;
+}
+
+.figma{
+    width: 80%;
+}
+
+.pre-code-example{
+    width: auto;
+    height: auto;
+}
+
+.lists-languages{
+    margin-left: 15px;
+    width: 100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 20px 60px;
+    color: #ffffff;
+    background-color: #17191d;
+    text-align: center
+}
+
+.footer_github-links,
+.footer_rs-school-links{
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+
+.footer_github-links{
+    background-image: url('./img/footer_github.png');
+}
+
+.footer_rs-school-links{
+    background-image: url('./img/footer_rs-school.png');
+}
+
+.footer_rs-school-links:hover{
+    background-image: url('./img/footer_rs-school_hover.png');
+}
+
+.footer_github-links:hover{
+    background-image: url('./img/footer_github_hover.png');
+}
+
+@media (max-width: 800px){
+    .section__container{
+        display: block;
+    }
+
+    .line{
+        display: none;
+    }
+
+    .main__title{
+        width: 100%;
+    }
+
+    .header__nav {
+        display: block;
+        height: auto;
+        width: 100%;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container__left-section,
+    .container__rigth-section,
+    .left-section__avatar{
+        width: 100%;
+    }
+
+    .left-section__avatar::before{
+        display: none;
+    } 
+
+    .avatar{
+        width: 50%;
+        max-width: 100%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }  
+
+    .pre-code-example{
+        font-size: 12px;
+    }  
+}
